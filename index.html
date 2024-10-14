@@ -1,0 +1,36 @@
+//Ajout des Labels et Inputs
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulateur de Taux</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Simulateur de Calcul des Taux</h1>
+    
+    <!-- Section des inputs pour le montant, le taux et la durée -->
+    <div>
+      <label for="inputMontant">Montant</label>
+      <input class="A" type="number" id="inputMontant" value="1000" min="1000" max="1000000" step="1000" />
+    </div>
+    <div>
+      <label for="inputAnnee">Année</label>
+      <input class="A" type="number" id="inputAnnee" value="1" min="1" max="25" step="1" />
+    </div>
+    <div>
+      <label for="inputTaux">Taux</label>
+      <input class="A" type="number" id="inputTaux" value="2" min="0.1" max="10" step="0.1" />
+    </div>
+
+    <!-- Tableau des mensualités -->
+    <table id="inputMensualite" class="table table-striped"></table>
+
+    <!-- Graphique des amortissements -->
+    <canvas id="amortissementChart" width="400" height="200"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
